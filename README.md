@@ -337,7 +337,7 @@ $ export LIBPROCESS_IP=10.145.6.68
 Clear the cache saved from prior run
 ```
 $ systemctl stop mesos-slave.service
-$ rm -f /tmp/mesos/meta/slaves/latest
+$ rm -rf /var/lib/mesos/meta/slaves/latest
 $ systemctl start mesos-slave.service
 $ systemctl status mesos-slave.service
 ```
